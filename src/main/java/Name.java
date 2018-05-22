@@ -57,9 +57,5 @@ public class Name {
 
     }
 
-//    public String returnNamePair() {
-//        Collections.shuffle(names);
-//        return Arrays.copyOfRange(this.names, 0, 1);
-//    }
 }
 
