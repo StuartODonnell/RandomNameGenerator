@@ -23,12 +23,12 @@ public class NameController {
             return new ModelAndView(model, "name.vtl");
         }, velocityTemplateEngine);
 
-//        get("/two", (req, res) -> {
-//            String result = name.returnNamePair();
-//            HashMap<String, Object> model = new HashMap<>();
-//            model.put("name_pair", result);
-//            return new ModelAndView(model, "name_pair.vtl");
-//        }, velocityTemplateEngine);
+        get("/two", (req, res) -> {
+            String result = name.returnNamePair();
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("name_pair", result);
+            return new ModelAndView(model, "name_pair.vtl");
+        }, velocityTemplateEngine);
     }
 
 }

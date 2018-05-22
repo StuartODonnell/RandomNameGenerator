@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -42,18 +43,23 @@ public class Name {
         this.names = names;
     }
 
-    public String returnName(){
+    public String returnName() {
         Collections.shuffle(names);
-            return names.get(0);
+        return names.get(0);
 
     }
 
-//    public String returnNamePair(){
+    public String returnNamePair(){
+        Collections.shuffle(names);
+        String name1 = names.get(0);
+        String name2 = names.get(1);
+        return name1 + " and " + name2;
+
+    }
+
+//    public String returnNamePair() {
 //        Collections.shuffle(names);
-//        return names.get(0), names.get(1);
+//        return Arrays.copyOfRange(this.names, 0, 1);
 //    }
-
-
-
-    }
+}
 
